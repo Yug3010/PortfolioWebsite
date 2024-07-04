@@ -1,0 +1,134 @@
+.contact {
+    padding: 50px;
+    background-color: #000000; /* Black background */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* White text color for better visibility */
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-title h1 {
+    font-size: 3rem;
+    color: #ffffff; /* White color for title text */
+    margin: 0;
+}
+
+.contact-title img {
+    display: block;
+    margin: 10px auto 0;
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-left {
+    margin-right: 20px;
+}
+
+.contact-left h1 {
+    font-size: 2.5rem;
+    color: #ff9800; /* Bright color for heading */
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    font-size: 1rem;
+    color: #cccccc; /* Light gray text color for better contrast */
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 15px;
+}
+
+.contact-detail img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-detail p {
+    font-size: 1rem;
+    color: #ffffff; /* White color for contact text */
+    margin: 0; /* Remove any default margin */
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right label {
+    font-size: 1rem;
+    color: #ffffff; /* White color for labels */
+    margin-bottom: 5px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1a1a1a; /* Dark background for inputs */
+    color: #ffffff; /* White text color */
+}
+
+.contact-right input::placeholder,
+.contact-right textarea::placeholder {
+    color: #888888; /* Light gray placeholder color */
+}
+
+.contact-submit {
+    padding: 8px 16px; /* Reduced padding to make the button shorter */
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800; /* Bright color for submit button */
+    color: #ffffff; /* White text color */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Align button to the left */
+}
+
+.contact-submit:hover {
+    background-color: #e68900; /* Slightly darker shade on hover */
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-left {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .contact-right {
+        padding: 0;
+    }
+}

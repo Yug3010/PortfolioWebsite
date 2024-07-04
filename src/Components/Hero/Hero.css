@@ -1,0 +1,73 @@
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #000; /* Ensure hero background matches the overall black theme */
+}
+
+.hero-logo {
+  width: 150px; /* Adjusted width to make the logo wide */
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 20%; /* Makes the logo have rounded edges */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #fff; /* Set text color to white for contrast */
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #ccc; /* Slightly lighter text color for contrast */
+  margin-bottom: 40px;
+}
+
+.hero-action {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-connect,
+.hero-resume {
+  padding: 10px 20px;
+  background-color: #905e26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.hero-connect .anchor-link,
+.hero-resume {
+  color: white; /* Set link color to match button text color */
+  text-decoration: none; /* Remove text decoration */
+}
+
+.hero-connect:hover,
+.hero-resume:hover {
+  background-color: #f5ec9b;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-action {
+    flex-direction: column;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    margin-bottom: 10px;
+  }
+}

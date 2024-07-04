@@ -1,0 +1,116 @@
+.experience {
+  padding: 50px;
+  background-color: #000000; /* Black background */
+  font-family: 'Arial', sans-serif;
+  color: #ffffff; /* White text color for better visibility */
+}
+
+.experience-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.experience-title h1 {
+  font-size: 3rem;
+  color: #ffffff; /* White color for title text */
+  margin: 0;
+}
+
+.experience-title img {
+  display: block;
+  margin: 10px auto 0;
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.experience-format {
+  background: #1a1a1a; /* Dark background for cards */
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px; /* Increased max-width to make the cards wider */
+  transition: transform 0.2s;
+}
+
+.experience-format:hover {
+  transform: scale(1.05);
+}
+
+.experience-format h3 {
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #ff5722, #ff9800); /* Gradient background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 0;
+  color: transparent; /* Transparent color for gradient effect */
+}
+
+.experience-format-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.experience-format h2 {
+  font-size: 2.2rem; /* Increased font size for company name */
+  color: #ffffff; /* White color for card title */
+  margin: 0;
+  font-weight: bold; /* Make the company name bold */
+  flex: 1;
+}
+
+.experience-format span {
+  font-size: 0.9rem;
+  color: #cccccc; /* Light gray color for dates */
+  margin-left: 10px;
+  white-space: nowrap; /* Prevent line break */
+}
+
+.experience-format p {
+  font-size: 1rem;
+  color: #cccccc; /* Light gray text color for better contrast */
+  margin-top: 10px;
+  line-height: 1.6; /* Increased line-height for better readability */
+}
+
+.experience-readmore {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.experience-readmore p {
+  font-size: 1rem;
+  color: #ff5722; /* Bright color for Read More link */
+  margin-right: 5px;
+}
+
+.experience-readmore img {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-format {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .experience-format h2, .experience-format span {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}

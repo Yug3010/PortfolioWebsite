@@ -1,0 +1,200 @@
+.about {
+    padding: 50px;
+    background-color: #000000; /* Black background */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* White text color for better visibility */
+  }
+  
+  .about-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-title h1 {
+    font-size: 3rem;
+    color: #ffffff; /* White color for title text */
+    margin: 0;
+  }
+  
+  .about-title img {
+    display: block;
+    margin: 10px auto 0;
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+  }
+  
+  .about-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical centering */
+    margin-bottom: 30px;
+  }
+  
+  .about-left, .about-right {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-left img {
+    width: 100%;
+    height: 100%; /* Ensures the image takes the full height of its container */
+    max-width: 1000px; /* Optional: sets a max width to maintain aspect ratio */
+    max-height: 2000px; /* Optional: sets a max height to maintain aspect ratio */
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  .about-para {
+    margin-bottom: 30px;
+  }
+  
+  .about-para p {
+    font-size: 1.1rem;
+    color: #dddddd; /* Light gray text color for better contrast */
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .about-skills {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .about-skills h2 {
+    font-size: 2rem;
+    color: #ffffff; /* White color for skills heading */
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .skill {
+    flex: 1 1 30%;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill p {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    color: #ffffff; /* White color for skill text */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .skill:hover p {
+    color: #ff5722; /* Change text color on hover */
+  }
+  
+  .progress-bar {
+    border: none;
+    height: 3px;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .skill:hover .progress-bar {
+    height: 5px; /* Increase height on hover */
+  }
+  
+  .progress-bar.html-css {
+    width: 80%; /* Adjusted percentage width */
+    background-color: #ff5722; /* Color for HTML & CSS */
+  }
+  
+  .progress-bar.javascript {
+    width: 70%; /* Adjusted percentage width */
+    background-color: #f0db4f; /* Color for JavaScript */
+  }
+  
+  .progress-bar.reactjs {
+    width: 75%; /* Adjusted percentage width */
+    background-color: #61dafb; /* Color for ReactJS */
+  }
+  
+  .progress-bar.mongodb {
+    width: 65%; /* Adjusted percentage width */
+    background-color: #4db33d; /* Color for MongoDB */
+  }
+  
+  .progress-bar.nodejs {
+    width: 70%; /* Adjusted percentage width */
+    background-color: #68a063; /* Color for NodeJS */
+  }
+  
+  .progress-bar.nextjs {
+    width: 60%; /* Adjusted percentage width */
+    background-color: red; /* Color for NextJS */
+  }
+  
+  .about-achievements {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .about-achievement {
+    flex: 1;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .about-achievement h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin: 0 0 10px 0;
+  }
+  
+  .about-achievement p {
+    margin: 0;
+    font-size: 1rem;
+    color: #dddddd; /* Light gray color for achievement text */
+  }
+  
+  .about-achievement hr {
+    border: none;
+    height: 1px;
+    background-color: #333333; /* Dark gray color for horizontal rule */
+    margin: 20px 0;
+  }
+  
+  .about-achievement:hover {
+    background-color: #333333; /* Change background color on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .about-sections {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-left, .about-right {
+      margin: 20px 0;
+    }
+  
+    .skills-list {
+      flex-direction: column;
+    }
+  
+    .skill {
+      flex: 1 1 100%;
+    }
+  
+    .about-achievements {
+      flex-direction: column;
+    }
+  
+    .about-achievement {
+      margin-bottom: 20px;
+    }
+  }
+  

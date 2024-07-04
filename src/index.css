@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000; /* Set the entire background to black */
+  color: #fff; /* Set the default text color to white for readability */
+  font-family: Arial, sans-serif;
+}

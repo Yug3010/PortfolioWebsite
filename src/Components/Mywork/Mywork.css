@@ -1,0 +1,105 @@
+.mywork {
+  padding: 50px;
+  background-color: #000000; /* Black background */
+  font-family: 'Arial', sans-serif;
+  color: #ffffff; /* White text color for better visibility */
+}
+
+.mywork-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mywork-title h1 {
+  font-size: 3rem;
+  color: #ffffff; /* White color for title text */
+  margin: 0;
+  font-weight: bold;
+}
+
+.mywork-title img {
+  display: block;
+  margin: 10px auto 0;
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.mywork-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mywork-card {
+  background-color: #222222; /* Dark card background */
+  border: 1px solid #444444; /* Border color for the card */
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
+  transition: transform 0.2s;
+}
+
+.mywork-card:hover {
+  transform: translateY(-5px);
+}
+
+.mywork-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #ffffff; /* White color for card title */
+}
+
+.mywork-card p {
+  font-size: 1em;
+  color: #bbbbbb; /* Light gray color for description */
+}
+
+.mywork-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.mywork-card li {
+  font-size: 0.9em;
+  color: #bbbbbb;
+}
+
+.mywork-showmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from the anchor tag */
+}
+
+.mywork-showmore p {
+  font-size: 1.25rem;
+  color: #ff9800; /* Bright color for "Show More" text */
+  margin-right: 10px;
+}
+
+.mywork-showmore img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.mywork-showmore:hover img {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .mywork-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mywork-card {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
