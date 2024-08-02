@@ -44,7 +44,9 @@ const Contact = () => {
       <div className="contact-section">
         <div className="contact-left">
           <h1>Let's talk</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum nobis rerum! Itaque quos ad sit vel dolores aliquid doloremque explicabo animi quasi similique consectetur quae aut enim magni unde, omnis atque aperiam libero! Praesentium consectetur qui alias voluptas quidem.</p>
+          <p>
+            I am always here to help you with any inquiries or concerns you may have. Whether you need assistance with our services, have a question about your account, or just want to give us feedback, feel free to reach out. I am dedicated to providing you with the best support possible.
+          </p>
           <div className="contact-details">
             <div className="contact-detail">
               <img src={mail} alt="Mail icon" />
@@ -58,7 +60,7 @@ const Contact = () => {
 
             <div className="contact-detail">
               <img src={location} alt="Location icon" />
-              <p>41 Garfella drive</p>
+              <p>41 Garfella Drive</p>
             </div>
           </div>
         </div>
